@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -51,10 +52,11 @@ public class CardFlipActivity extends Activity
      */
     private boolean mShowingBack = false;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Log.d("","Started Created");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_flip);
 
@@ -66,6 +68,9 @@ public class CardFlipActivity extends Activity
                     .beginTransaction()
                     .add(R.id.container, new CardFrontFragment())
                     .commit();
+
+
+
         } else {
             mShowingBack = (getFragmentManager().getBackStackEntryCount() > 0);
         }

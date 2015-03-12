@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\darraghflynn\Desktop\AnimationsDemo1\app\libs\android-support-v13.jar"
+        jar="/Users/darraghflynn/Desktop/card-flip-demo/app/libs/android-support-v13.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="0a0cf96dabecd7b65a3638a229e7bdb42e6b0a77">
-        <dex dex="C:\Users\darraghflynn\Desktop\AnimationsDemo1\app\build\intermediates\pre-dexed\debug\android-support-v13-17d685e106dc3573ddc6ef0b67740984aa898686.jar" />
+        <dex dex="/Users/darraghflynn/Desktop/card-flip-demo/app/build/intermediates/pre-dexed/debug/android-support-v13-0d6431b91968302c92863a1b3125ef3c66f829fe.jar" />
     </item>
 
 </items>

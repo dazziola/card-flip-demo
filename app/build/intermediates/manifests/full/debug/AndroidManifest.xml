@@ -18,7 +18,6 @@
     package="com.example.android.animationsdemo"
     android:versionCode="1"
     android:versionName="1.0" >
-
     <!--
         This example's minimum API level is 14 due to the following recent
         key platform features:
@@ -46,45 +45,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.animationsdemo.CrossfadeActivity"
-            android:label="@string/title_crossfade"
-            android:parentActivityName="com.example.android.animationsdemo.MainActivity"
-            android:uiOptions="splitActionBarWhenNarrow" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
             android:name="com.example.android.animationsdemo.CardFlipActivity"
             android:label="@string/title_card_flip"
             android:parentActivityName="com.example.android.animationsdemo.MainActivity"
             android:theme="@style/DarkTheme" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name="com.example.android.animationsdemo.ScreenSlideActivity"
-            android:label="@string/title_screen_slide"
-            android:parentActivityName="com.example.android.animationsdemo.MainActivity"
-            android:uiOptions="splitActionBarWhenNarrow" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name="com.example.android.animationsdemo.ZoomActivity"
-            android:label="@string/title_zoom"
-            android:parentActivityName="com.example.android.animationsdemo.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name="com.example.android.animationsdemo.LayoutChangesActivity"
-            android:label="@string/title_layout_changes"
-            android:parentActivityName="com.example.android.animationsdemo.MainActivity" >
->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

@@ -42,40 +42,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CrossfadeActivity"
-            android:label="@string/title_crossfade"
-            android:uiOptions="splitActionBarWhenNarrow"
-            android:parentActivityName=".MainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
         <activity android:name=".CardFlipActivity"
             android:label="@string/title_card_flip"
             android:parentActivityName=".MainActivity"
             android:theme="@style/DarkTheme">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity android:name=".ScreenSlideActivity"
-            android:label="@string/title_screen_slide"
-            android:parentActivityName=".MainActivity"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity android:name=".ZoomActivity"
-            android:label="@string/title_zoom"
-            android:parentActivityName=".MainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity android:name=".LayoutChangesActivity"
-            android:label="@string/title_layout_changes"
-            android:parentActivityName=".MainActivity">>
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
