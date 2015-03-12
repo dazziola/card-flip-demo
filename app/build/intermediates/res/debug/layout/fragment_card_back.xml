@@ -18,33 +18,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#a6c"
-    android:padding="16dp"
+    android:background="#f3901e"
     android:gravity="bottom"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="26dp"
+    android:paddingBottom="26dp">
 
     <WebView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
         android:id="@+id/checkout"
-        android:layout_weight="0.93" />
-
-    <TextView android:id="@android:id/text1"
-        style="?android:textAppearanceLarge"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/card_back_title" />
-
-    <TextView style="?android:textAppearanceSmall"
-        android:textAllCaps="true"
-        android:textColor="#80ffffff"
-        android:textStyle="bold"
-        android:lineSpacingMultiplier="1.2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/card_back_description" />
+        android:layout_weight="1.09"
+        android:layout_gravity="center_horizontal|right" />
 
 </LinearLayout>
-<!-- From: file:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/layout/fragment_card_back.xml -->
+<!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/layout/fragment_card_back.xml -->

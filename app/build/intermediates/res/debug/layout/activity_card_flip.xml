@@ -17,5 +17,12 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
-<!-- From: file:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/layout/activity_card_flip.xml -->
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top"
+        android:padding="20dp"></RelativeLayout>
+</FrameLayout>
+<!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/layout/activity_card_flip.xml -->

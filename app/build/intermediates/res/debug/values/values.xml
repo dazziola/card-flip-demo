@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="action_flip" type="id"/>
     <item name="action_next" type="id"/>
-    <!-- From: file:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/integers.xml -->
+    <!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/integers.xml -->
     <eat-comment/>
     <integer name="card_flip_time_full">350</integer>
     <integer name="card_flip_time_half">175</integer>
-    <!-- From: file:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_add_item">Add item</string>
     <string name="action_finish">Finish</string>
@@ -34,7 +34,7 @@
     <string name="title_template_step">Step <ns1:g id="step_number">%1$d</ns1:g>: Lorem
         Ipsum</string>
     <string name="title_zoom">Zoom</string>
-    <!-- From: file:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="DarkActionBar" parent="android:Widget.Holo.ActionBar">
         <item name="android:background">@android:color/transparent</item>
