@@ -27,11 +27,9 @@
     android:paddingBottom="26dp">
 
     <WebView
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/checkout"
-        android:layout_weight="1.09"
-        android:layout_gravity="center_horizontal|right" />
+        android:id="@+id/checkout" />
 
 </LinearLayout>
 <!-- From: file:/C:/Users/darraghflynn/Desktop/card-flip-demo/app/src/main/res/layout/fragment_card_back.xml -->

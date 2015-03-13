@@ -17,9 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Titles -->
-    <string name="app_name">Animations Demo</string>
+    <string name="app_name">HPP Demo</string>
     <string name="title_crossfade">Simple Crossfade</string>
-    <string name="title_card_flip">Card Flip</string>
+    <string name="title_card_flip">HPP Flip Demo</string>
     <string name="title_screen_slide">Screen Slide</string>
     <string name="title_zoom">Zoom</string>
     <string name="title_layout_changes">Layout Changes</string>

@@ -16,11 +16,13 @@
 
 package com.example.android.animationsdemo;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.NavUtils;
@@ -281,6 +283,7 @@ public class CardFlipActivity extends Activity
             return convertToHex(sha1hash);
         }
 
+        @TargetApi(Build.VERSION_CODES.KITKAT)
         public WebView getWebView(String merchantId, String orderId, String amount, String currency, String secret) throws UnsupportedEncodingException, NoSuchAlgorithmException {
 
             String shaHash1;
@@ -299,6 +302,7 @@ public class CardFlipActivity extends Activity
             web = (WebView) secondView.findViewById(R.id.checkout);
             web.setWebViewClient(new myWebClient());
             web.getSettings().setJavaScriptEnabled(true);
+            web.setWebContentsDebuggingEnabled(true);
             String url = "https://hpp.sandbox.realexpayments.com/pay";
 
             List<BasicNameValuePair> nvps = new ArrayList<BasicNameValuePair>();
@@ -309,10 +313,9 @@ public class CardFlipActivity extends Activity
             nvps.add(new BasicNameValuePair("TIMESTAMP", timestamp));
             nvps.add(new BasicNameValuePair("AUTO_SETTLE_FLAG", "1"));
             nvps.add(new BasicNameValuePair("SHA1HASH", shaHash2));
-
+            nvps.add(new BasicNameValuePair("MERCHANT_RESPONSE_URL", "http://2013.clevercuisine.ie/hpp_response.php"));
 
             Log.d("", URLEncodedUtils.format(nvps, "UTF-8"));
-
 
             web.postUrl(url, URLEncodedUtils.format(nvps, "UTF-8").getBytes());
             return web;
@@ -323,7 +326,8 @@ public class CardFlipActivity extends Activity
                 Bundle savedInstanceState) {
             secondView = inflater.inflate(R.layout.fragment_card_back, container, false);
             try {
-                WebView myWebView = getWebView("darraghtest", "99999999", "20575", "EUR", "secret");
+                WebView myWebView = getWebView("darraghtest", toString().valueOf(1 + (int) (Math.random() * ((99999999 - 1) + 1))), "20575", "EUR", "secret");
+                myWebView.addJavascriptInterface(new WebAppInterface(getActivity()), "Android");
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             } catch (NoSuchAlgorithmException e) {
